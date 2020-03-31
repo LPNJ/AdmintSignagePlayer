@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_msg_clean_all_request">データ初期化を予約しました</string>
+    <string name="toast_msg_clean_schedule_request">スケジュールのクリアを予約しました</string>
+
+    <string name="toast_msg_clear_schedule_success">スケジュールをクリアしました</string>
+    <string name="toast_msg_clear_schedule_error">スケジュールのクリアに失敗しました</string>
+    <string name="toast_msg_clear_playlist_success">プレイリストをクリアしました</string>
+    <string name="toast_msg_clear_playlist_error">プレイリストのクリアに失敗しました</string>
+
+    <string name="toast_msg_clear_contents_success">ダウンロード済コンテンツファイルをクリアしました</string>
+    <string name="toast_msg_clear_contents_error">ダウンロード済コンテンツファイルのクリアに失敗しました</string>
+
+    <string name="toast_msg_delete_unused_contents_request">未使用コンテンツファイルの削除を予約しました</string>
+    <string name="toast_msg_delete_unused_contents_success">未使用コンテンツファイルを削除しました</string>
+    <string name="toast_msg_delete_unused_contents_error">未使用コンテンツの削除に失敗しました</string>
+
+    <string name="toast_msg_sdcard_request">拡張ストレージの読み込みを予約しました</string>
+
+    <string name="toast_msg_sdcard_content_extend_skip">本体メモリ不足のためスキップ</string>
+    <string name="toast_msg_sdcard_content_extend_error">ファイルの展開に失敗しました</string>
+    <string name="toast_msg_sdcard_content_extend_success">ファイルを展開しました</string>
+
+    <string name="toast_msg_sdcard_start">拡張ストレージの読み込みを開始します</string>
+    <string name="toast_msg_sdcard_success">拡張ストレージの読み込みが終了しました</string>
+    <string name="toast_msg_sdcard_error">拡張ストレージの読み込みに失敗しました</string>
+
+    <string name = "toast_msg_stand_alone_start">コンテンツの読み込みを開始します</string>
+    <string name="toast_msg_stand_alone_success">コンテンツの読み込みに成功しました</string>
+    <string name="toast_msg_stand_alone_error">コンテンツの読み込みに失敗しました</string>
+
+    <string name="toast_msg_do_health_check">ヘルスチェックを予約しました</string>
+    <string name="toast_msg_output_log_request">ログのファイル出力を予約しました</string>
+    <string name="toast_msg_output_log_success">ログのファイル出力が終了しました</string>
+    <string name="toast_msg_output_log_error_no_output_place">ログのファイル出力に失敗しました（外部メモリーが存在しません）</string>
+    <string name="toast_msg_output_log_error_no_input_file">ログのファイル出力に失敗しました（対象のファイルが存在しません）</string>
+    <string name="toast_msg_output_log_error">ログのファイル出力に失敗しました</string>
+    <string name="toast_msg_clear_log_request">ログのクリアを予約しました</string>
+    <string name="toast_msg_clear_log_success">ログのクリアが終了しました</string>
+    <string name="toast_msg_clear_log_error">ログのクリアに失敗しました</string>
+    <string name="toast_msg_upload_touch_log_request">タッチログのアップロードを予約しました</string>
+    <!--<string name="toast_msg_upload_touch_log_success">タッチログのアップロードが終了しました</string>-->
+    <!--<string name="toast_msg_upload_touch_log_error">タッチログのアップロードに失敗しました</string>-->
+    <!--<string name="toast_msg_upload_touch_log_no_exist">アップロード対象のタッチログが存在しません</string>-->
+    
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_key_use_extra_storage">use_extra_storage</string>
+    <string name="setting_key_sdcard_drive">sdcard_drive</string>
+    <string name="setting_key_wifi_reset">wifi_reset</string>
+    <string name="setting_key_check_anr_reboot">check_anr_reboot</string>
+    <string name="setting_key_net_service">net_service</string>
+    <string name="setting_key_boot_start">boot_start</string>
+    <string name="setting_key_delete_unused_contents">delete_unused_contents</string>
+    <string name="setting_key_clear_schedule">clear_schedule</string>
+    <string name="setting_key_clean_all">clean_all</string>
+    <string name="setting_key_notice_log">notice_log</string>
+    <string name="setting_key_notice_log_dev">notice_log_dev</string>
+    <string name="setting_key_output_log">output_log</string>
+    <string name="setting_key_clear_log">clear_log</string>
+    <string name="setting_key_terminal_id">terminal_id</string>
+
+    <string name="setting_key_manage_server_url">manage_server_url</string>
+<!--    <string name="setting_key_manage_server_url">https://request.admintstg.jp/</string>-->
+
+    <string name="setting_key_site_id">site_id</string>
+<!--    <string name="setting_key_site_id">devt21</string>&ndash;&gt;-->
+
+    <string name="setting_key_akey">akey</string>
+<!--    <string name="setting_key_akey">SH21TEST031</string>-->
+
+    <string name="setting_key_user_storage">user_storage</string>
+    <string name="setting_key_tablet_model">tablet_model</string>
+    <string name="setting_key_output_anr_trace_log">output_anr_trace_log</string>
+    <string name="setting_key_debug_mode">debug_mode</string>
+    <string name="setting_key_limitless_content_mode">limitless_content_mode</string>
+    <string name="setting_key_stand_alone_mode">stand_alone_mode</string>
+    <string name="setting_key_have_set_stand_alone">have_set_stand_alone_mode</string>
+
+    <string name="setting_key_check_anr">check_anr</string>
+    <string name="setting_key_fast_video_change">fast_video_change</string>
+
+    <string name="setting_key_proxy_enable">proxy_enable</string>
+    <string name="setting_key_proxy_host">proxy_host</string>
+    <string name="setting_key_proxy_port">proxy_port</string>
+    <string name="setting_key_proxy_user">proxy_user</string>
+    <string name="setting_key_proxy_password">proxy_password</string>
+    <string name="setting_key_proxy_webcontent">proxy_webcontent</string>
+
+    <!-- Register -->
+    <string name="setting_key_registered_terminal">registered_terminal</string>
+    <string name="setting_key_registered_activation_day">registered_activation_day</string>
+    <string name="setting_key_registered_reboot">registered_reboot</string>
+    <string name="setting_key_registered_reboot_check">registered_reboot_check</string>
+    <string name="setting_key_registered_extra_id">registered_extra_id</string>
+    <string name="setting_key_registered_show_dialog">registered_show_dialog</string>
+    <string name="setting_key_registered_stb_id">registered_stb_id</string>
+
+    <!-- Dialog -->
+    <string name="setting_key_dialog_title_text">端末が未登録です</string>
+    <string name="setting_key_dialog_info_text">登録の完了していない端末で起動しています。端末の登録を行いますか？</string>
+    <string name="setting_key_dialog_check_text">次回から表示しない</string>
+
+<!-- GroovaBox専用 -->
+    <string name="setting_key_reset_network">reset_network</string>
+<!-- -->
+
+
+    <string name="setting_list_title_clean_all">データ初期化</string>
+    <string name="setting_list_title_net_service">ネットワーク接続許可</string>
+    <string name="setting_list_title_boot_start">自動起動</string>
+    <string name="setting_list_title_clear_schedule">再生スケジュールクリア</string>
+    <string name="setting_list_title_delete_unused_contents">未使用コンテンツ削除</string>
+    <string name="setting_list_title_sdcard_drive">拡張ストレージパス</string>
+    <string name="setting_list_title_user_storage">ユーザストレージパス</string>
+    <string name="setting_list_title_output_log">ファイル出力</string>
+    <string name="setting_list_title_output_anr_trace_log">ANRのトレースログをファイル出力</string>
+    <string name="setting_list_title_clear_log">ログのクリア</string>
+    <string name="setting_list_title_notice_log">NOTICEログ</string>
+    <!--<string name="setting_list_title_notice_log_dev">NOTICEログ</string>-->
+    <!--<string name="setting_list_title_volume_auto">音量自動調節</string>-->
+    <string name="setting_list_title_use_extra_storage">拡張ストレージ使用</string>
+    <!--<string name="setting_list_title_tablet_model">タブレットモデル</string>-->
+    <string name="setting_list_title_upload_touch_log">タッチログのアップロード</string>
+    <!--<string name="setting_list_title_orientation_portrait">縦置き</string>-->
+    
+    <string name="setting_list_title_proxy_enable">プロキシ設定を有効</string>
+    <string name="setting_list_title_proxy_host">ホスト</string>
+    <string name="setting_list_title_proxy_port">ポート</string>
+    <string name="setting_list_title_proxy_user">ユーザ</string>
+    <string name="setting_list_title_proxy_password">パスワード</string>
+    <string name="setting_list_title_proxy_web_content">Webコンテンツでプロキシを利用しない</string>
+
+    <string name="setting_list_title_wifi_reset">Wi-Fi再起動</string>
+    <string name="setting_list_title_fast_video_change">動画切り替えを高速化</string>
+    <string name="setting_list_title_reset_network">ネットワーク自動再起動</string>
+    <string name="setting_list_title_check_anr_and_reboot">ANR発生時に再起動</string>
+
+    <string name="setting_list_title_standalone_flag">スタンドアローンモードを有効にする</string>
+
+    <string name="setting_list_summary_disable">※お使いの端末ではご選択いただけません</string>
+    <string name="setting_list_summary_clean_all">本体メモリ内の全てのデータを削除</string>
+    <string name="setting_list_summary_net_service">オフの時、インターネットに接続する全ての処理を行わない</string>
+    <string name="setting_list_summary_boot_start">オフの時、端末起動時にプレイヤーを起動しない</string>
+    <string name="setting_list_summary_clear_schedule">プレイヤーの再生スケジュールデータをクリア</string>
+    <string name="setting_list_summary_delete_unused_contents">未使用コンテンツファイルを削除</string>
+    <string name="setting_list_summary_sdcard_drive">アクセスを行う拡張ストレージのルートパス</string>
+    <string name="setting_list_summary_user_storage">プレイヤーデータを配置するユーザストレージのパス</string>
+    <string name="setting_list_summary_output_log">外部メモリーにログをファイル出力</string>
+    <string name="setting_list_summary_clear_log">ログを全て削除</string>
+    <string name="setting_list_summary_notice_log">ログレベルNOTICEのロギング</string>
+    <!--<string name="setting_list_summary_volume_auto">プレイヤーの音量を自動調節</string>-->
+    <string name="setting_list_summary_use_extra_storage">プレイヤーのデータ領域に拡張ストレージを使用する</string>
+    <string name="setting_list_summary_fast_video_change">動画間の切り替わりを高速化（切り替わり時に画面のちらつきが発生することがあります）</string>
+    <string name="setting_list_summary_reset_network">通信状態不良時、ネットワーク接続を自動的に再起動する</string>
+    <string name="setting_list_summary_upload_touch_log">サーバにタッチログをアップロード</string>
+    <!--<string name="setting_list_summary_orientation_portrait">モニターを縦置きする（オフの時はシステム設定に従う）</string>-->
+    
+    <string name="setting_list_summary_proxy_enable">オンの時、プロキシ経由でネット接続を行う</string>
+    <string name="setting_list_summary_proxy_host">ホスト名</string>
+    <string name="setting_list_summary_proxy_port">ポート番号</string>
+    <string name="setting_list_summary_proxy_user">認証ユーザ</string>
+    <string name="setting_list_summary_proxy_password">認証パスワード</string>
+    <string name="setting_list_summary_wifi_reset">通信状態不良時、Wi-Fiを自動的に再起動する</string>
+    <string name="setting_list_summary_check_anr_and_reboot">オンの時、定期的にANRの発生を検知し端末再起動を実行</string>
+    <string name="setting_list_summary_proxy_webcontent">オンの時、Webコンテンツはプロキシを経由しません</string>
+    <string name="setting_list_summary_limitless_content_mode">オンの時、未対応のコンテンツも再生するようにします</string>
+
+    <string name="setting_list_summary_standalone_flag">スタンドアローンモードが有効</string>
+
+    <string name="setting_dialog_message_clean_all">登録情報を除く全てのプレイヤーデータを削除します\n\nよろしいですか？</string>
+    <string name="setting_dialog_message_clear_schedule">プレイヤーの再生スケジュールデータをクリアします\n\nよろしいですか？</string>
+    <string name="setting_dialog_message_delete_unused_contents">未使用のコンテンツファイル、およびキャッシュを削除します\n\nよろしいですか？</string>
+    <string name="setting_dialog_message_output_log">外部メモリーにログを出力します\n\nよろしいですか？</string>
+    <string name="setting_dialog_message_output_log_storage">ログを出力する外部メモリーを選択してください</string>
+    <string name="setting_dialog_message_use_storage">外部メモリーを選択してください</string>
+    <string name="setting_dialog_message_clear_log">ログをクリアします\n\nよろしいですか？</string>
+    <string name="setting_dialog_message_upload_touch_log">サーバにタッチログをアップロードします\n\nよろしいですか？</string>
+
+    <string name="setting_list_terminal_id">ターミナルID</string>
+    <string name="setting_list_title_site_id">サイトID</string>
+    <string name="setting_list_title_akey">AKEY</string>
+    <string name="setting_list_title_manage_server_url">管理サーバURL設定</string>
+    <string name="setting_list_title_limitless_content_mode">コンテンツの再生制限を行わない</string>
+    <string name="setting_list_title_debug_mode">デバッグモード</string>
+
+    <string name="setting_hander_title_system">システム</string>
+    <string name="setting_hander_summary_system">システムの動作設定</string>
+    <string name="setting_hander_title_data">データ</string>
+    <string name="setting_hander_summary_data">データ管理</string>
+    <string name="setting_hander_title_log">ログ</string>
+    <string name="setting_hander_summary_log">ログの動作設定</string>
+    <string name="setting_hander_title_develop">開発用</string>
+    <string name="setting_hander_title_proxy">プロキシ</string>
+    <string name="setting_hander_summary_proxy">プロキシの設定</string>
+    <string name="setting_hander_title_touch">タッチコンテンツ</string>
+    <string name="setting_hander_summary_touch">タッチコンテンツの設定</string>
+    <string name="setting_hander_title_standalone">スタンドアローン</string>
+    <string name="setting_hander_summary_standalone">スタンドアローンの設定</string>
+
+    <string name="setting_view_comment_web_content">Webコンテンツ利用時、プロキシ設定の変更を反映するには端末の再起動を行ってください。</string>
+    <string name="setting_key_check_toto_proxy">check_toto_proxy</string>
+
+</resources>

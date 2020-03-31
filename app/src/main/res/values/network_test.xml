@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="execution_test">テスト実行</string>
+
+    <string name="result">実行結果</string>
+    <string name="last_run_date_and_time">最終実行日時</string>
+    
+    <string name="current_time">現在時刻</string>
+
+    <string name="terminal_id">端末ID</string>
+    <string name ="extra_id">機番(S/N)</string>
+    <string name="stb_id">端末管理番号</string>
+    <string name="proxy">プロキシ</string>
+    <string name="proxy_use">使用する</string>
+    <string name="proxy_unuse">使用しない</string>
+    <string name="proxy_host">プロキシ ホスト名</string>
+    <string name="proxy_port">プロキシ ポート番号</string>
+    <string name="proxy_user_name">プロキシ ユーザ名</string>
+    <string name="proxy_password">プロキシ パスワード</string>
+    <string name="network_type">ネットワーク種別</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_other">その他</string>
+    <string name="ssid">SSID</string>
+    <string name="ip_address">IPアドレス</string>
+    <string name="default_gateway">デフォルトゲートウェイ</string>
+    <string name="subnet_mask">サブネットマスク</string>
+    <string name="dns1">DNS</string>
+    <string name="dns2">DNS2</string>
+    <string name="wifi_rssi">電波強度(dBm)</string>
+    
+    <!--<string name="wireless_lan_info">無線LAN情報</string>-->
+    <!--<string name="wired_lan_info">有線LAN情報</string>-->
+    
+    <string name="execute_ping_command_to_default_gateway">デフォルトゲートウェイに対してpingコマンドを実行します</string>
+    <string name="execute_ping_command_to_proxy_server">プロキシサーバに対してpingコマンドを実行します</string>
+    <string name="execute_health_check">ヘルスチェックを実行します</string>
+    <string name="ping_success">成功</string>
+    <string name="ping_failed">失敗</string>
+    <string name="ping_executing">実行中</string>
+
+    <string name="could_not_get">取得できませんでした</string>
+
+    <string name="net_service_off">ネットサービスがオフになっています</string>
+
+    <string name="non_target_ip">ターゲットIPが取得できませんでした</string>
+
+    <string name="log_info_network_test_health_check">ネットワークテストによるヘルスチェックを実行します</string>
+
+</resources>

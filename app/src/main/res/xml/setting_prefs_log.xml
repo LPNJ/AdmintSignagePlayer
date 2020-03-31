@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.OutputLogDialogPreference
+        android:key="@string/setting_key_output_log"
+        android:title="@string/setting_list_title_output_log"
+        android:summary="@string/setting_list_summary_output_log"/>
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.ClearLogDialogPreference
+        android:key="@string/setting_key_clear_log"
+        android:title="@string/setting_list_title_clear_log"
+        android:summary="@string/setting_list_summary_clear_log"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_notice_log"
+        android:key="@string/setting_key_notice_log"
+        android:defaultValue="@bool/default_notice_log"
+        android:summary="@string/setting_list_summary_notice_log"/>
+</PreferenceScreen>

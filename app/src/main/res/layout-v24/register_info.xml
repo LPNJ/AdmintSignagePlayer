@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:minHeight="?android:actionBarSize"
+        android:maxHeight="?android:actionBarSize"
+        android:background="?android:colorPrimary"
+        android:elevation="20dp"
+        android:navigationIcon="@drawable/player"
+        android:title="@string/app_name"
+        tools:ignore="NewApi,UnusedAttribute">
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_info">
+
+    </ScrollView>
+
+</LinearLayout>
+

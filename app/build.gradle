@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+def PACKAGE_NAME = "jp.co.digitalcruise.admint.player"
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId PACKAGE_NAME
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 82
+        versionName "3.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    Properties props = new Properties()
+    if (rootProject.file("release.properties").exists()) {
+        props.load(new FileInputStream(rootProject.file("release.properties")))
+    } else {
+        throw new GradleException("Please create release.properties in project root.")
+    }
+    signingConfigs {
+        debug {
+//            storeFile file('../keystore/dci_debug.keystore')
+        }
+        release {
+            storeFile rootProject.file(props.storeFile)
+            storePassword props.storePassword
+            keyAlias props.keyAlias
+            keyPassword props.keyPassword
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions{
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [app_name: "@string/app_name"]
+            signingConfig signingConfigs.debug
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            manifestPlaceholders = [app_name: "@string/app_name"]
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+    }
+    buildToolsVersion = '28.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/photoSphereLib.jar')
+    implementation files('libs/apache/httpclient-4.5.6.jar')
+    implementation files('libs/apache/httpcore-4.4.10.jar')
+    implementation files('libs/apache/httpmime-4.3.4.jar')
+    implementation files('libs/groova/beachapi.jar')
+    implementation files('libs/groova/tvfcommon.jar')
+    implementation files('libs/groova/tvplatform.jar')
+    implementation files('libs/groova/armeabi/libserializer.so')
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.3'
+}

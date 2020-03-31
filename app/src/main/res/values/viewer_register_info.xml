@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="viewer_info_window_title_info">端末情報</string>
+    <string name="viewer_info_row_label_version">プレイヤーバージョン</string>
+    <string name="viewer_info_row_label_site_id">サイトID</string>
+    <string name="viewer_info_row_label_manage_server_url">管理サーバURL</string>
+    <string name="viewer_info_row_label_delivery_server_url">配信サーバURL</string>
+    <string name="viewer_info_row_label_akey">AKEY</string>
+    <string name="viewer_info_row_label_terminal_id">認証キー</string>
+    <string name="viewer_info_row_label_extra_code">機番(S/N)</string>
+    <string name="viewer_info_row_label_control_number">端末管理番号</string>
+    <string name="viewer_info_row_label_registered_day">端末登録日</string>
+
+    <string name="viewer_info_column_label_regist_info">登録情報</string>
+    <!--<string name="viewer_info_column_label_setting_info">サーバ設定情報</string>-->
+    <!--<string name="viewer_info_column_label_get_timestamp">取得更新日時</string>-->
+</resources>

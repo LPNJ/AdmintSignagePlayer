@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference 
+        android:key="@string/setting_key_manage_server_url" 
+        android:title="@string/setting_list_title_manage_server_url"
+        android:inputType="textUri"/>
+    <EditTextPreference 
+        android:key="@string/setting_key_site_id" 
+        android:title="@string/setting_list_title_site_id" 
+        android:inputType="textUri"/>
+    <EditTextPreference 
+        android:key="@string/setting_key_akey" 
+        android:title="@string/setting_list_title_akey" 
+        android:inputType="textUri"/>
+    <EditTextPreference 
+        android:key="@string/setting_key_user_storage" 
+        android:title="@string/setting_list_title_user_storage" 
+        android:summary="@string/setting_list_summary_user_storage" 
+        android:inputType="textUri"/>
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.OutputLogDialogPreference
+        android:key="@string/setting_key_output_anr_trace_log"
+        android:title="@string/setting_list_title_output_anr_trace_log"
+        android:summary="@string/setting_list_summary_output_log"/>
+    <CheckBoxPreference
+        android:key="@string/setting_key_limitless_content_mode"
+        android:title="@string/setting_list_title_limitless_content_mode"
+        android:summary="@string/setting_list_summary_limitless_content_mode"
+        android:defaultValue="@bool/default_limitless_content_mode"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_debug_mode"
+        android:key="@string/setting_key_debug_mode"
+        android:defaultValue="@bool/default_debug_mode" />
+</PreferenceScreen>

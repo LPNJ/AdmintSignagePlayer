@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_standalone_flag"
+        android:summary="@string/setting_list_summary_standalone_flag"
+        android:key="@string/setting_key_stand_alone_mode"
+        android:defaultValue="@bool/default_stand_alone_mode"/>
+
+</PreferenceScreen>

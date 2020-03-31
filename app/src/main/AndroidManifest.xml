@@ -1,0 +1,95 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jp.co.digitalcruise.admint.player">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+                     tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="jp.co.ricoh.isdk.sdkservice.common.SdkService.RICOH_APP_CMD_PERMISSION"/>
+    <uses-permission android:name="jp.co.ricoh.isdk.sdkservice.common.SdkService.RICOH_APP_EVENT_PERMISSION"/>
+
+    <application
+        android:name=".AdmintApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:description="@string/app_description"
+        android:icon="@drawable/player"
+        android:label="@string/app_name"
+        android:logo="@drawable/player_240"
+        android:roundIcon="@drawable/player_240"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/setting_hander_regist_proxy" />
+        <!--
+        LAUNCHERのActivityはAdmintHomeで参照しているので次の値となるように固定すること！
+        jp.co.digitalcruise.admint.player.PlayerActivity
+        -->
+        <activity
+            android:name=".PlayerActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="${app_name}" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.main.SettingPreferenceActivity" />
+        <activity android:name=".activity.main.SettingInfoActivity" />
+        <activity android:name=".activity.main.ScheduleActivity" />
+        <activity android:name=".activity.main.LogActivity" />
+        <activity android:name=".activity.main.networktest.NetworkTestActivity" />
+        <activity
+            android:name=".activity.viewer.ViewerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:launchMode="standard"/>
+        <activity android:name=".activity.register.RegisterActivity" android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <service android:name=".service.LoggingService"/>
+        <service android:name=".service.PlaylistService"/>
+        <service android:name=".service.RecoverService"/>
+        <service android:name=".service.UpdaterService"/>
+        <service android:name=".service.StandAloneContent"/>
+
+        <service android:name=".service.network.NetApiService"/>
+        <service android:name=".service.network.ContentManagerService"/>
+        <service android:name=".service.network.HealthCheckService"/>
+        <service android:name=".service.network.NetApiService"/>
+        <service android:name=".service.network.NetLogService"/>
+        <service android:name=".service.network.RealtimeCheckService"/>
+        <service android:name=".service.network.ReportService"/>
+
+
+        <receiver android:name=".receiver.PlayerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="jp.co.digitalcruise.admint.player.PlayerBroadcastReceiver.REGIST"/>
+                <action android:name="jp.co.digitalcruise.admint.player.activity.viewer.ViewerActivity.CHECK_UPDATE"/>
+                <action android:name="jp.co.digitalcruise.admint.player.PlayerBroadcastReceiver.BOOT_START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="controller_type" android:value="1" />
+
+    </application>
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="jp.co.digitalcruise.admint.player.activity.main.SettingPreferenceActivity$PrefsSystem"
+            android:title="@string/setting_hander_title_system"
+            android:summary="@string/setting_hander_summary_system" />
+
+    <header android:fragment="jp.co.digitalcruise.admint.player.activity.main.SettingPreferenceActivity$PrefsProxy"
+            android:title="@string/setting_hander_title_proxy"
+            android:summary="@string/setting_hander_summary_proxy" />
+
+    <header android:fragment="jp.co.digitalcruise.admint.player.activity.main.SettingPreferenceActivity$PrefsData"
+            android:title="@string/setting_hander_title_data"
+            android:summary="@string/setting_hander_summary_data" />
+
+    <header android:fragment="jp.co.digitalcruise.admint.player.activity.main.SettingPreferenceActivity$PrefsLog"
+            android:title="@string/setting_hander_title_log"
+            android:summary="@string/setting_hander_summary_log" />
+
+</preference-headers>

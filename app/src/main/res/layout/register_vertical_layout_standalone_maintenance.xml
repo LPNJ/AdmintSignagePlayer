@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:id="@+id/detectKeyboard">
+
+    <LinearLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    style="@style/TextViewHeader"
+                    android:text="@string/lbl_txt_header_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RadioGroup
+                    android:id="@+id/rBtnGroup"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rBtnRelease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Release"/>
+                    <RadioButton
+                        android:id="@+id/rBtnStaging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staging"/>
+                    <RadioButton
+                        android:id="@+id/rBtnDevelop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Develop"/>
+                </RadioGroup>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textModelName"
+            style="@style/TextViewItemName"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextViewItemName"-->
+            <!--android:text="@string/text_horizontal_setting"/>-->
+
+        <Button
+            android:id="@+id/settingClear"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lbl_btn_setting_clear"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_light"
+            android:layout_marginBottom="5dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- Network setting -->
+                <TableLayout
+                    android:id="@+id/networkLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_txt_network_setting"
+                            android:textSize="20sp"
+                            android:id="@+id/network_title"/>
+
+                        <TextView
+                            android:id="@+id/registerIpAddress"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="[disconnect]" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <Button
+                            android:id="@+id/NetworkSetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/lbl_btn_network_setting" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/holo_blue_light"
+                        android:layout_margin="5dp"/>
+                </TableLayout>
+
+
+                <!-- Proxy server setting-->
+                <TableLayout
+                    android:id="@+id/proxyLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_txt_proxy_setting"
+                            android:textSize="20sp"
+                            android:id="@+id/proxy_title"/>
+                        <TextView
+                            android:id="@+id/registerProxyServer"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:id="@+id/doNotUseProxy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/lbl_btn_not_use_proxy"/>
+
+                        <Button
+                            android:id="@+id/ProxySetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_btn_use_proxy" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/holo_blue_light"
+                        android:layout_margin="5dp"/>
+                </TableLayout>
+
+
+                <!-- Reboot -->
+                <TableLayout
+                    android:id="@+id/rebootLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_txt_reboot"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/deviceDateTime"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <Button
+                            android:id="@+id/rebootBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/lbl_btn_reboot" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/holo_blue_light"
+                        android:layout_margin="5dp" />
+                </TableLayout>
+
+                <!-- stand-alone -->
+                <TableLayout
+                    android:id="@+id/stand-aloneLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_txt_standalone"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/StandAlone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/lbl_checkbox_standalone" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/holo_blue_light" />
+                </TableLayout>
+
+                <!-- input -->
+                <TableLayout
+                    android:id="@+id/inputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:text="@string/lbl_txt_input_title"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:text="@string/lbl_txt_terminalid" />
+
+                        <EditText
+                            android:id="@+id/editTerminalid"
+                            style="@style/EditText"
+                            android:hint="@string/edit_hint_terminalid"
+                            android:inputType="textUri"
+                            android:labelFor="@id/editTerminalid" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/TextViewItemName"
+                            android:text="@string/lbl_txt_siteid" />
+
+                        <EditText
+                            android:id="@+id/editSiteid"
+                            android:labelFor="@id/editSiteid"
+                            android:inputType="textUri"
+                            android:hint="@string/edit_hint_siteid"
+                            style="@style/EditText"/>
+
+                    </TableRow>
+
+                    <!--<TableRow-->
+                    <!--android:paddingTop="10dip"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<CheckBox-->
+                    <!--style="@style/CheckBox"-->
+                    <!--android:id="@+id/cbxUpdateFlag"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:checked="false"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text="@string/cbx_txt_update_flag" />-->
+                    <!--</TableRow>-->
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btnRegistServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:layout_gravity="end"
+                    android:text="@string/lbl_btn_regist_server" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!-- log -->
+        <TextView
+            style="@style/TextViewTitle"
+            android:text="@string/lbl_txt_log_title" />
+
+        <ScrollView
+            android:id="@+id/scrLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <LinearLayout
+                android:id="@+id/layoutLog"
+                style="@style/LogLayout" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

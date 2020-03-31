@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_proxy_enable"
+        android:key="@string/setting_key_proxy_enable"
+        android:defaultValue="@bool/default_proxy_enable"
+        android:summary="@string/setting_list_summary_proxy_enable"/>
+    <EditTextPreference
+        android:key="@string/setting_key_proxy_host"
+        android:title="@string/setting_list_title_proxy_host"
+        android:summary="@string/setting_list_summary_proxy_host"
+        android:inputType="textUri"/>
+    <EditTextPreference
+        android:key="@string/setting_key_proxy_port"
+        android:title="@string/setting_list_title_proxy_port"
+        android:summary="@string/setting_list_summary_proxy_port"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:key="@string/setting_key_proxy_user"
+        android:title="@string/setting_list_title_proxy_user"
+        android:summary="@string/setting_list_summary_proxy_user"
+        android:inputType="textUri"/>
+    <EditTextPreference
+        android:key="@string/setting_key_proxy_password"
+        android:title="@string/setting_list_title_proxy_password"
+        android:summary="@string/setting_list_summary_proxy_password"
+        android:inputType="textPassword"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_proxy_web_content"
+        android:key="@string/setting_key_proxy_webcontent"
+        android:defaultValue="@bool/default_proxy_webcontent"
+        android:summary="@string/setting_list_summary_proxy_webcontent"/>
+    <PreferenceCategory
+        android:layout = "@layout/webcontent_summary">
+    </PreferenceCategory>
+
+</PreferenceScreen>

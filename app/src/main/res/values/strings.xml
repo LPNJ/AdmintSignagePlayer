@@ -1,0 +1,45 @@
+<resources>
+<!--    <string name="app_name">AdmintPlayer</string>-->
+    <string name="app_name">SignagePlayer</string>
+    <string name="app_description">クラウド管理型電子POPサービス POPプレイヤー</string>
+
+    <string name="lang_select">言語選択</string>
+    <string name="content_id">コンテンツID: </string>
+    <string name="external_content_id">サブID: </string>
+    <string name="material_name">マテリアル: </string>
+    <string name="retry_count">リトライ回数: </string>
+
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="mobile">3G/LTE</string>
+    <!--<string name = "file_playlist">playlist.xml</string>-->
+    <string name = "file_schedule">schedule.xml</string>
+    <!--<string name = "file_setting_info">setting_info</string>-->
+
+    <string name = "touch_list_xml">list.xml</string>
+
+    <string name = "content_extension">.zip</string>
+    <string name = "content_downloading_suffix">.tmp</string>
+
+    <!-- SettingPreference -->
+    <string name = "external_storage">拡張ストレージ</string>
+    <string name = "auto_boot">自動起動</string>
+    <string name = "proxy_setting_on">プロキシの設定をオンにしました</string>
+    <string name = "proxy_setting_off">プロキシの設定をオフにしました</string>
+    <string name = "web_content_proxy_setting_on">Webコンテンツのプロキシ設定をオンにしました</string>
+    <string name = "web_content_proxy_setting_off">Webコンテンツのプロキシ設定をオフにしました</string>
+    <string name = "please_reboot_application">\n設定を反映するためにはアプリを再起動してください</string>
+    <string name = "dialog_button_ok">OK</string>
+    <string name = "dialog_button_yes">Yes</string>
+    <string name = "dialog_button_cancel">Cancel</string>
+    <string name = "dialog_stand_alone_on">ネットワーク通信を有効にしました\n設定の反映を行うためアプリまたは端末を再起動してください</string>
+    <string name = "dialog_stand_alone_off">ネットワーク通信を無効にしました\n設定の反映を行うためアプリまたは端末を再起動してください</string>
+    <string name = "change_stand_alone">設定の変更</string>
+
+    <string name = "download_end_stand_alone_content">コンテンツの展開が完了しました\nリモコンを使用しこのウィンドウを閉じる または 端末の再起動を行ってください</string>
+    <string name = "log_info_detect_disconnect_wifi">WiFiの切断を検知しました</string>
+
+    <string name = "login_btn">ログイン</string>
+    <string name = "print_btn">印刷</string>
+
+</resources>

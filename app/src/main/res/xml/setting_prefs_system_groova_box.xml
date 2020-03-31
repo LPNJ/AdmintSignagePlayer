@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:key="@string/setting_key_sdcard_drive"
+        android:title="@string/setting_list_title_sdcard_drive"
+        android:summary="@string/setting_list_summary_sdcard_drive"
+        android:inputType="textUri"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_use_extra_storage"
+        android:key="@string/setting_key_use_extra_storage"
+        android:defaultValue="@bool/default_use_extra_storage"
+        android:summary="@string/setting_list_summary_use_extra_storage"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_fast_video_change"
+        android:key="@string/setting_key_fast_video_change"
+        android:defaultValue="@bool/default_fast_video_change"
+        android:summary="@string/setting_list_summary_fast_video_change"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_reset_network"
+        android:key="@string/setting_key_reset_network"
+        android:defaultValue="@bool/default_reset_network"
+        android:summary="@string/setting_list_summary_reset_network"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_check_anr_and_reboot"
+        android:key="@string/setting_key_check_anr_reboot"
+        android:defaultValue="@bool/default_check_anr_reboot"
+        android:summary="@string/setting_list_summary_check_anr_and_reboot"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_net_service"
+        android:key="@string/setting_key_net_service"
+        android:defaultValue="@bool/default_net_service"
+        android:summary="@string/setting_list_summary_net_service"/>
+</PreferenceScreen>

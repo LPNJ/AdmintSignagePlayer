@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="schedule_label_latest_server_check_time">Latest server check time:</string>
+    <string name="schedule_label_next_health_check_time">Next health check time:</string>
+    <string name="schedule_label_next_ahead_load_time">Next ahead load time:</string>
+    <string name="schedule_label_health_check_interval">Health check interval:</string>
+    <string name="schedule_label_ahead_load_date">Ahead load date :</string>
+    <string name="schedule_label_ahead_load_time">Ahead load time :</string>
+    <string name="schedule_label_reboot_alarm_time">Reboot alarm time :</string>
+
+    <string name="no_data">NO DATA</string>
+</resources>

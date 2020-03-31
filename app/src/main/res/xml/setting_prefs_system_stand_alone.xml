@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="@string/setting_list_title_sdcard_drive"
+        android:key="@string/setting_key_sdcard_drive"
+        android:summary="@string/setting_list_summary_sdcard_drive"
+        android:inputType="textUri"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_use_extra_storage"
+        android:key="@string/setting_key_use_extra_storage"
+        android:defaultValue="@bool/default_use_extra_storage"
+        android:summary="@string/setting_list_summary_use_extra_storage"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_wifi_reset"
+        android:key="@string/setting_key_wifi_reset"
+        android:defaultValue="@bool/default_wifi_reset"
+        android:summary="@string/setting_list_summary_wifi_reset"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_check_anr_and_reboot"
+        android:key="@string/setting_key_check_anr_reboot"
+        android:defaultValue="@bool/default_check_anr_reboot"
+        android:summary="@string/setting_list_summary_check_anr_and_reboot"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_net_service"
+        android:key="@string/setting_key_net_service"
+        android:defaultValue="false"
+        android:summary="@string/setting_list_summary_net_service"
+        android:enabled="false"/>
+    <CheckBoxPreference
+        android:title="@string/setting_list_title_boot_start"
+        android:key="@string/setting_key_boot_start"
+        android:summary="@string/setting_list_summary_boot_start"
+        android:defaultValue="@bool/default_boot_start"/>
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_setting" android:title="@string/menu_item_setting_title"
+        android:orderInCategory="0"/>
+    <item android:id="@+id/menu_network_test" android:title="@string/menu_item_setting_network_test"/>
+    <item android:id="@+id/menu_schedule_request" android:title="@string/menu_item_schedule_request_title">
+        <menu>
+            <item android:id="@+id/menu_healthcheck" android:title="@string/menu_item_healthcheck_title"/>
+            <item android:id="@+id/menu_aheadload" android:title="@string/menu_item_aheadload_title"/>
+            <item android:id="@+id/menu_sdcard" android:title="@string/menu_item_sdcard_title"/>
+        </menu>
+    </item>
+    <item android:id="@+id/menu_view" android:title="@string/menu_item_view_title">
+        <menu>
+            <item android:id="@+id/menu_info" android:title="@string/menu_item_info_title"/>
+            <item android:id="@+id/menu_schedule" android:title="@string/menu_item_schedule_title"/>
+            <item android:id="@+id/menu_log" android:title="@string/menu_item_log_title"/>
+            <item android:id="@+id/menu_license" android:title="@string/menu_item_license"/>
+        </menu>
+    </item>
+    <item android:id="@+id/menu_server_request" android:title="@string/menu_item_system_title">
+        <menu>
+            <item android:id="@+id/menu_reboot" android:title="@string/menu_item_reboot_title"/>
+        </menu>
+    </item>
+</menu>

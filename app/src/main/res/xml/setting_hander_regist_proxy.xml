@@ -1,0 +1,6 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:fragment="jp.co.digitalcruise.admint.player.activity.main.SettingPreferenceActivity$PrefsProxy"
+        android:title="@string/setting_hander_title_proxy"
+        android:summary="@string/setting_hander_summary_proxy" />
+</preference-headers>

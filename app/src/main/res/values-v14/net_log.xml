@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ContentManagerService -->
+    <string name="net_log_notice_finish_download">ダウンロードが完了しました</string>
+    <string name="net_log_notice_start_download">ダウンロードを開始します</string>
+    <string name="net_log_notice_error_download">ダウンロードに失敗しました</string>
+    <string name="net_log_notice_delete_unused_content">利用予定のないコンテンツを削除しました</string>
+
+    <string name="net_log_notice_content_id">対象コンテンツID: </string>
+    <string name="net_log_notice_content_download">スケジュール登録 / 変更を検知しました。コンテンツのダウンロードを行います</string>
+    <string name="net_log_notice_external_content_download">デイリーコンテンツの変更を検知しました。ダウンロードを行います</string>
+
+    <string name="net_log_warning_black_list_content">コンテンツを再生対象外リストに登録しました</string>
+    <string name="net_log_warning_extend_failed">コンテンツファイルの展開に失敗しました</string>
+    <string name="net_log_warning_no_enough_storage">ストレージ容量が不足しています</string>
+
+    <!-- UpdaterService -->
+    <string name="net_logging_notice_reboot_terminal">端末再起動を実行します</string>
+
+    <!-- PlayerBroadcastRecever -->
+<!--    <string name="net_logging_notice_my_pacage_replaced">AdmintPlayerのパッケージが更新されました</string>-->
+    <string name="net_logging_notice_my_pacage_replaced">SignagePlayerのパッケージが更新されました</string>
+<!--    <string name="net_logging_notice_complated_regist">AdmintPlayerの端末登録が完了しました</string>-->
+    <string name="net_logging_notice_complated_regist">SignagePlayerの端末登録が完了しました</string>
+
+
+    <string name="net_logging_notice_show_content">現在再生対象のコンテンツID: </string>
+    <string name="net_logging_notice_show_default_content">デフォルトコンテンツ再生中: </string>
+
+    <string name="net_logging_notice_reset_wifi">WiFiを再起動しました</string>
+    <string name="net_logging_notice_reset_ethernet">有線LAN接続を再起動しました</string>
+    <string name="net_logging_notice_reset_3g">3Gモジュールを再起動しました</string>
+
+    <!-- Rescue String-->
+    <string name = "net_log_notice_emergency_info_detected">緊急情報を検知しました</string>
+    <string name="net_log_notice_rescue_content_download">緊急情報を検知しました。コンテンツのダウンロードを行います</string>
+    <string name = "net_log_notice_rescue_content_id">対象緊急コンテンツID: </string>
+    <string name = "net_log_notice_now_playback_rescue_content">緊急情報再生中：</string>
+    <string name = "net_log_notice_telop_playback_now">(緊急情報テロップ)</string>
+
+    <!--
+    <string name="net_logging_warning_rtc_download_retry_max">リアルタイムチェックのダウンロード試行回数が上限に達しました</string>
+    <string name="net_logging_notice_delete_unused_files">キャッシュファイルを削除しました</string>
+    <string name="net_logging_notice_delete_unused_external_files">未使用デイリーコンテンツを削除しました</string>
+    <string name="net_logging_notice_content_download">スケジュール登録 / 変更を検知しました。コンテンツのダウンロードを行います</string>
+    <string name="net_logging_notice_external_content_download">デイリーコンテンツの変更を検知しました。ダウンロードを行います</string>
+    <string name="net_logging_notice_content_id">対象コンテンツID: </string>
+    <string name="net_logging_notice_reset_wifi">WiFiを再起動しました</string>
+    <string name="net_logging_notice_reset_ethernet">有線LAN接続を再起動しました</string>
+    <string name="net_logging_notice_reset_3g">3Gモジュールを再起動しました</string>
+    -->
+    <!-- 末尾にコンテンツIDおよびサブID -->
+    <!--<string name="net_logging_warning_failed_play">再生に失敗しました</string>-->
+
+    <!-- 末尾にマテリアルのファイル名 -->
+</resources>

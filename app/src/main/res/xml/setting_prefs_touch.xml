@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.UploadTouchLogDialogPreference
+        android:title="@string/setting_list_title_upload_touch_log" 
+        android:summary="@string/setting_list_summary_upload_touch_log"/>
+</PreferenceScreen>

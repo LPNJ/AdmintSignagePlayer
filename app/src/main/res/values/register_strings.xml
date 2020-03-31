@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_msg_broadcast_complate">PlayerおよびUpdaterへの登録通知を行いました。\nアプリケーションの動作確認を行ってください。</string>
+    <string name="dialog_msg_registration_complete">初期設定が完了しました。\n \n 機番：%1$s \n \nお手持ちのPCから配信スケジュールをご登録いただくと\nコンテンツ放映が開始されます。</string>
+    <string name="dialog_msg_registration_complete_common">初期設定が完了しました \n マニュアルに従い配信スケジュールの設定をしてください\nスケジュールの設定後、コンテンツの放映が開始されます。</string>
+    <string name="dialog_title_broadcast_complate">登録完了</string>
+    <string name="lbl_txt_header_title">端末登録</string>
+    <string name="lbl_txt_network_setting">ネットワーク設定</string>
+    <string name="lbl_txt_proxy_setting">プロキシサーバ設定</string>
+    <string name="lbl_txt_reboot">時刻設定</string>
+    <string name="lbl_txt_standalone">スタンドアローン</string>
+    <string name="lbl_txt_input_title">端末情報入力</string>
+    <string name="lbl_txt_terminalid">認証キー</string>
+    <string name="edit_hint_terminalid">通知されている認証キーを入力</string>
+    <string name="lbl_txt_extra_code">機番(S/N)</string>
+    <string name="edit_hint_serial_key">端末に記載</string>
+    <string name="lbl_txt_siteid">サイトID</string>
+    <string name="edit_hint_siteid">入力指示がない場合は空白のまま</string>
+    <string name="lbl_btn_network_setting">ネットワーク設定</string>
+    <string name="lbl_btn_not_use_proxy">プロキシを使用しない</string>
+    <string name="lbl_btn_use_proxy">プロキシを設定する</string>
+    <string name="lbl_btn_reboot">時刻再設定</string>
+    <string name="lbl_checkbox_standalone">スタンドアローンで利用する</string>
+    <string name="lbl_btn_regist_server">端末をサーバに登録</string>
+    <string name="lbl_btn_setting_clear">設定初期化</string>
+    <string name="lbl_txt_regist_title">登録情報</string>
+    <string name="lbl_txt_akey">AKEY</string>
+    <string name="lbl_txt_manage_server">管理サーバURL</string>
+    <string name="lbl_txt_delivery_server">配信サーバURL</string>
+    <string name="lbl_txt_log_title">ログ</string>
+    <string name="txt_default_value">未設定</string>
+    <string name="cbx_txt_update_flag">既存の登録内容を更新</string>
+    <string name="cbx_txt_auto_time_flag">Updaterによる時刻設定</string>
+
+    <string name="log_error_no_exist_updater">PlayerUpdaterがインストールされていません。インストール後に再度実行してください。</string>
+    <string name="log_error_no_exist_updater_admint">AdmintUpdaterがインストールされていません。インストール後に再度実行してください。</string>
+    <string name="log_error_no_input_terminal_id">認証キーが入力されていません</string>
+    <string name="log_error_no_target_model">ご利用の端末はキッティング対象外です</string>
+
+    <string name="log_error_request_code_1">認証キーが空です</string>
+    <string name="log_error_request_code_2">誤りがある、または存在していない認証キーです。\n入力内容をご確認ください</string>
+    <string name="log_error_request_code_3">電話番号が不正な値です</string>
+    <string name="log_error_request_code_4">サイトIDが入力されていません</string>
+    <string name="log_error_request_code_5">入力されたサイトIDは存在しません</string>
+    <string name="log_error_request_code_6">入力されたサイトIDはサーバーに登録されていません\n入力内容をご確認ください</string>
+    <string name="log_error_request_code_7">サイトIDが登録されていない端末です\nサイトIDを入力してください</string>
+    <string name="log_error_request_code_8">対象外のモデルです</string>
+    <string name="log_error_request_code_9">サーバDBの端末にSTB-IDが設定されていません</string>
+    <string name="log_error_request_code_10">認証キーが既に登録されています</string>
+    <string name="log_error_request_code_11">サーバーに登録されていないサイトIDです</string>
+
+    <string name="log_error_extra_id_not_input">機番が入力されていません。</string>
+
+    <string name="log_error_post_exception">サーバとの通信に失敗しました</string>
+    <string name="log_error_post_check_your_setting">ネットワーク設定、プロキシ設定をご確認ください</string>
+    <string name="log_error_request_false">サーバリクエストに失敗しました</string>
+
+    <string name="log_error_entry_error">アプリケーション登録に失敗しました</string>
+
+    <string name ="log_error_terminal_id_miss"> (認証キーの誤り) </string>
+    <string name ="log_error_phone_num_miss"> (電話番号の誤り) </string>
+    <string name ="log_error_site_id_miss"> (サイトIDの誤り) </string>
+    <string name ="log_error_model_miss"> (モデルの誤り) </string>
+    <string name ="log_error_stb_id_miss"> (STB-IDの誤り) </string>
+    <string name ="log_error_conflict_terminal_id"> (使用済みの認証キー) </string>
+    <string name ="log_error_connect_failed"> (サーバーとの通信に失敗) </string>
+
+
+    <!--<string name="log_notice_request_start">サーバリクエスト開始</string>-->
+    <string name="log_notice_request_start">端末をサーバーに登録します</string>
+    <string name="log_notice_request_finish">サーバリクエスト終了</string>
+    <string name="log_notice_entry_finish">端末の登録が完了しました</string>
+
+    <string name="log_notice_volume_minimum">音量を最小に設定しました</string>
+    <string name="log_notice_volume_maximize">音量を最大に設定しました</string>
+
+    <string name="text_view_ip_address">( IPアドレス: %1$s ) </string>
+    <string name="text_view_proxy_server">( ホスト名: %1$s , ポート番号: %2$s )</string>
+    <string name="text_view_datetime">( %1$s )</string>
+
+    <string name="text_clear_setting_title">端末設定の初期化</string>
+    <string name="text_clear_setting_message">端末に保存されている設定を削除します。\n設定の削除を行うと端末の再登録が必要になります。\n設定の削除を実行しますか？</string>
+
+    <string name="text_lbl_model_stripe">RICOH Digital Signage STB Type1</string>
+
+    <string name="lbl_device_update_failed_title">端末登録実施の確認</string>
+    <string name="lbl_device_update_failed_message">入力された認証キーは既に使用されています。\nこの認証キーで本端末をサーバーに登録しますか？\n登録を実行すると、以前この認証キーで登録された端末の登録は解除されます。</string>
+
+    <string name="log_info_registered_start">端末の登録を開始します</string>
+    <string name="log_info_registered_complete">端末の登録が完了しました</string>
+    <string name="log_info_registered_failed">端末の登録に失敗しました</string>
+    <string name="lbl_use_device_not_need_extra_id">お使いの端末では入力の必要はありません</string>
+
+    <string name="lbl_complete_device_initialize">設定の初期化を実行しました。</string>
+
+    <string name="text_vertical_setting">縦画面での表示をご希望の方は、表示画面の設定を変更してください。\n(設定方法はマニュアルをご参照ください)</string>
+    <string name="text_horizontal_setting">横画面での表示をご希望の方は、表示画面の設定を変更してください。\n(設定方法はマニュアルをご参照ください)</string>
+
+    <string name="title_dialog_time_set">時刻設定</string>
+    <string name="text_dialog_time_set">時刻の設定をするには端末の再起動が必要です \n再起動を実行しますか？</string>
+
+
+    <string name="dialog_title_license">著作権表示</string>
+    <string name="text_uses_oss">・httpcore.jar \n・httpclient.jar \n・httpmime.jar</string>
+    <string name="text_uses_oss_okhttp">・OkHttp</string>
+    <string name="text_notice_file">Notice for files</string>
+
+    <string name="text_license">
+                        \ Apache License\n
+                   Version 2.0, January 2004\n
+                http://www.apache.org/licenses/\n\n
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n
+
+   1. Definitions.\n\n
+
+      \"License\" shall mean the terms and conditions for use, reproduction,\n
+      and distribution as defined by Sections 1 through 9 of this document.\n\n
+
+      \"Licensor\" shall mean the copyright owner or entity authorized by\n
+      the copyright owner that is granting the License.\n\n
+
+      \"Legal Entity\" shall mean the union of the acting entity and all\n
+      other entities that control, are controlled by, or are under common\n
+      control with that entity. For the purposes of this definition,\n
+      \"control\" means (i) the power, direct or indirect, to cause the\n
+      direction or management of such entity, whether by contract or\n
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n
+      outstanding shares, or (iii) beneficial ownership of such entity.\n\n
+
+      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n
+      exercising permissions granted by this License.\n\n
+
+      \"Source\" form shall mean the preferred form for making modifications,\n
+      including but not limited to software source code, documentation\n
+      source, and configuration files.\n\n
+
+      \"Object\" form shall mean any form resulting from mechanical\n
+      transformation or translation of a Source form, including but\n
+      not limited to compiled object code, generated documentation,\n
+      and conversions to other media types.\n\n
+
+      \"Work\" shall mean the work of authorship, whether in Source or\n
+      Object form, made available under the License, as indicated by a\n
+      copyright notice that is included in or attached to the work\n
+      (an example is provided in the Appendix below).\n\n
+
+      \"Derivative Works\" shall mean any work, whether in Source or Object\n
+      form, that is based on (or derived from) the Work and for which the\n
+      editorial revisions, annotations, elaborations, or other modifications\n
+      represent, as a whole, an original work of authorship. For the purposes\n
+      of this License, Derivative Works shall not include works that remain\n
+      separable from, or merely link (or bind by name) to the interfaces of,\n
+      the Work and Derivative Works thereof.\n\n
+
+      \"Contribution\" shall mean any work of authorship, including\n
+      the original version of the Work and any modifications or additions\n
+      to that Work or Derivative Works thereof, that is intentionally\n
+      submitted to Licensor for inclusion in the Work by the copyright owner\n
+      or by an individual or Legal Entity authorized to submit on behalf of\n
+      the copyright owner. For the purposes of this definition, \"submitted\"\n
+      means any form of electronic, verbal, or written communication sent\n
+      to the Licensor or its representatives, including but not limited to\n
+      communication on electronic mailing lists, source code control systems,\n
+      and issue tracking systems that are managed by, or on behalf of, the\n
+      Licensor for the purpose of discussing and improving the Work, but\n
+      excluding communication that is conspicuously marked or otherwise\n
+      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n
+
+      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n
+      on behalf of whom a Contribution has been received by Licensor and\n
+      subsequently incorporated within the Work.\n\n
+
+   2. Grant of Copyright License. Subject to the terms and conditions of\n
+      this License, each Contributor hereby grants to You a perpetual,\n
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n
+      copyright license to reproduce, prepare Derivative Works of,\n
+      publicly display, publicly perform, sublicense, and distribute the\n
+      Work and such Derivative Works in Source or Object form.\n\n
+
+   3. Grant of Patent License. Subject to the terms and conditions of\n
+      this License, each Contributor hereby grants to You a perpetual,\n
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n
+      (except as stated in this section) patent license to make, have made,\n
+      use, offer to sell, sell, import, and otherwise transfer the Work,\n
+      where such license applies only to those patent claims licensable\n
+      by such Contributor that are necessarily infringed by their\n
+      Contribution(s) alone or by combination of their Contribution(s)\n
+      with the Work to which such Contribution(s) was submitted. If You\n
+      institute patent litigation against any entity (including a\n
+      cross-claim or counterclaim in a lawsuit) alleging that the Work\n
+      or a Contribution incorporated within the Work constitutes direct\n
+      or contributory patent infringement, then any patent licenses\n
+      granted to You under this License for that Work shall terminate\n
+      as of the date such litigation is filed.\n\n
+
+   4. Redistribution. You may reproduce and distribute copies of the\n
+      Work or Derivative Works thereof in any medium, with or without\n
+      modifications, and in Source or Object form, provided that You\n
+      meet the following conditions:\n\n
+
+      (a) You must give any other recipients of the Work or\n
+          Derivative Works a copy of this License; and\n\n
+
+      (b) You must cause any modified files to carry prominent notices\n
+          stating that You changed the files; and\n\n
+
+      © You must retain, in the Source form of any Derivative Works\n
+          that You distribute, all copyright, patent, trademark, and\n
+          attribution notices from the Source form of the Work,\n
+          excluding those notices that do not pertain to any part of\n
+          the Derivative Works; and\n\n
+
+      (d) If the Work includes a \"NOTICE\" text file as part of its\n
+          distribution, then any Derivative Works that You distribute must\n
+          include a readable copy of the attribution notices contained\n
+          within such NOTICE file, excluding those notices that do not\n
+          pertain to any part of the Derivative Works, in at least one\n
+          of the following places: within a NOTICE text file distributed\n
+          as part of the Derivative Works; within the Source form or\n
+          documentation, if provided along with the Derivative Works; or,\n
+          within a display generated by the Derivative Works, if and\n
+          wherever such third-party notices normally appear. The contents\n
+          of the NOTICE file are for informational purposes only and\n
+          do not modify the License. You may add Your own attribution\n
+          notices within Derivative Works that You distribute, alongside\n
+          or as an addendum to the NOTICE text from the Work, provided\n
+          that such additional attribution notices cannot be construed\n
+          as modifying the License.\n\n
+
+      You may add Your own copyright statement to Your modifications and\n
+      may provide additional or different license terms and conditions\n
+      for use, reproduction, or distribution of Your modifications, or\n
+      for any such Derivative Works as a whole, provided Your use,\n
+      reproduction, and distribution of the Work otherwise complies with\n
+      the conditions stated in this License.\n\n
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,\n
+      any Contribution intentionally submitted for inclusion in the Work\n
+      by You to the Licensor shall be under the terms and conditions of\n
+      this License, without any additional terms or conditions.\n
+      Notwithstanding the above, nothing herein shall supersede or modify\n
+      the terms of any separate license agreement you may have executed\n
+      with Licensor regarding such Contributions.\n\n
+
+   6. Trademarks. This License does not grant permission to use the trade\n
+      names, trademarks, service marks, or product names of the Licensor,\n
+      except as required for reasonable and customary use in describing the\n
+      origin of the Work and reproducing the content of the NOTICE file.\n\n
+
+   7. Disclaimer of Warranty. Unless required by applicable law or\n
+      agreed to in writing, Licensor provides the Work (and each\n
+      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n
+      implied, including, without limitation, any warranties or conditions\n
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n
+      PARTICULAR PURPOSE. You are solely responsible for determining the\n
+      appropriateness of using or redistributing the Work and assume any\n
+      risks associated with Your exercise of permissions under this License.\n\n
+
+   8. Limitation of Liability. In no event and under no legal theory,\n
+      whether in tort (including negligence), contract, or otherwise,\n
+      unless required by applicable law (such as deliberate and grossly\n
+      negligent acts) or agreed to in writing, shall any Contributor be\n
+      liable to You for damages, including any direct, indirect, special,\n
+      incidental, or consequential damages of any character arising as a\n
+      result of this License or out of the use or inability to use the\n
+      Work (including but not limited to damages for loss of goodwill,\n
+      work stoppage, computer failure or malfunction, or any and all\n
+      other commercial damages or losses), even if such Contributor\n
+      has been advised of the possibility of such damages.\n\n
+
+   9. Accepting Warranty or Additional Liability. While redistributing\n
+      the Work or Derivative Works thereof, You may choose to offer,\n
+      and charge a fee for, acceptance of support, warranty, indemnity,\n
+      or other liability obligations and/or rights consistent with this\n
+      License. However, in accepting such obligations, You may act only\n
+      on Your own behalf and on Your sole responsibility, not on behalf\n
+      of any other Contributor, and only if You agree to indemnify,\n
+      defend, and hold each Contributor harmless for any liability\n
+      incurred by, or claims asserted against, such Contributor by reason\n
+      of your accepting any such warranty or additional liability.\n\n
+
+   END OF TERMS AND CONDITIONS\n\n
+
+    </string>
+</resources>

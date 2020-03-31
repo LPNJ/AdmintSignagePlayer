@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--PlayerActivity -->
+    <string name="log_info_launch_player_boot_complated">Playerが起動しました（OS起動）</string>
+    <string name="log_info_launch_player_manual">Playerが起動しました（手動）</string>
+    <string name="log_info_launch_player_other">Playerが起動しました（その他）</string>
+
+    <!--ViewerActivty -->
+    <!--<string name="log_info_schedule_playlist">スケジュールされたコンテンツを再生します</string>-->
+    <!--<string name="log_info_default_playlist">デフォルトコンテンツを再生します</string>-->
+    <!--<string name="log_info_no_content_in_playlist">再生するコンテンツが存在しません。ブランク画面を表示します</string>-->
+    <string name="log_info_start_viewer">Viewerが起動しました</string>
+    <string name="log_info_finish_viewer">Viewerが終了しました</string>
+    <string name="log_error_finish_viewer_error">Viewerがエラー終了しました</string>
+    <string name="log_error_webview_load_error">WebViewでURLの読み込みに失敗しました</string>
+
+    <string name="log_info_viewer_no_exist_play_content">再生コンテンツが存在しません。ブランク画面を表示します</string>
+    <string name="log_info_viewer_no_exist_playlist_play_default">プレイリストに再生コンテンツが存在しません。 デフォルトコンテンツを再生します</string>
+    <string name="log_info_viewer_play_healthcheck_schedule">ヘルスチェックスケジュールコンテンツを再生します</string>
+    <string name="log_info_viewer_play_aheadload_schedule">先行取得スケジュールコンテンツを再生します</string>
+    <string name="log_info_viewer_play_externalstorage_schedule">拡張ストレージ読み込みスケジュールコンテンツを再生します</string>
+
+
+    <!--PlayerBroadcastReceiver -->
+    <string name="log_info_boot_completed">端末の起動を検知しました</string>
+    <string name="log_info_time_changed_or_timezone_changed">時刻またはタイムゾーンが変更されました</string>
+    <string name="log_info_package_changed">プレイヤーのバージョンが更新されました</string>
+
+    <!--HealthCheckService, NetLogService -->
+    <string name="log_error_no_setting_delivery_server_url">配信サーバURLが未設定です</string>
+
+    <!--AbstractNetworkService -->
+    <string name="log_error_result_xml_return_ng">エンドポイントからNG値が返却されました</string>
+    <string name="log_error_failed_connect_network">利用可能なネットワークサービスが存在しません</string>
+
+    <!--ContentManagerService -->
+    <string name="log_info_deleted_unused_contents">利用予定のないコンテンツを削除しました</string>
+    <string name="log_info_deleted_unused_external_contents">利用予定のない外部コンテンツを削除しました</string>
+    <string name="log_info_deleted_all_contents">全てのコンテンツファイルを削除しました</string>
+    <string name="log_info_no_enough_storage">ストレージ容量が不足しています</string>
+    <string name="log_info_delete_non_id_dir">展開途中ののコンテンツディレクトリが存在し削除します</string>
+    <string name="log_info_success_download_content">コンテンツのダウンロードに成功しました</string>
+    <string name="log_info_start_download_content">コンテンツのダウンロードを開始します</string>
+    <string name="log_info_success_extend_content">コンテンツファイルの展開に成功しました</string>
+    <string name="log_info_skip_download_in_blacklist_content">ブラックリスト登録コンテンツのためダウンロードをスキップします</string>
+    <string name="log_info_change_schedule_donwloading">コンテンツダウンロード中にスケジュール更新が発生しました</string>
+
+    <string name="log_error_no_setting_download_server_url">CDNサーバまたは配信サーバURLが未設定です</string>
+    <string name="log_error_failed_download_content">コンテンツのダウンロードに失敗しました</string>
+    <string name="log_error_black_list_content">コンテンツをブラックリストに登録しました</string>
+    <string name="log_error_failed_extend_content">コンテンツファイルの展開に失敗しました</string>
+    <string name="log_error_delete_fraudulent_content">再生エラーが連続発生したコンテンツを削除しました</string>
+    <string name="log_error_no_exist_material_entry">list.xml内に素材ファイルの登録がありません</string>
+
+    <!--PlaylistService -->
+    <string name="log_info_all_clear_playlist">プレイリストをクリアしました</string>
+
+    <!--LoggingService -->
+    <string name="log_info_reduction_log">ログデータを一部削除しました</string>
+
+    <!--RecoverService -->
+    <string name="log_info_detect_no_launch_viewer">Viewerの未起動を検知しました</string>
+    <string name="log_info_reset_wifi">WiFiを再起動しました</string>
+    <string name="log_info_reset_ethernet">有線LAN接続を再起動しました</string>
+    <string name="log_info_reset_3g">3Gモジュールを再起動しました</string>
+    <string name="log_error_detect_anr">ANRを検知しました</string>
+
+    <!--HealthCheckService -->
+    <string name="log_info_start_health_check">ヘルスチェックを開始します</string>
+    <string name="log_info_success_health_check">ヘルスチェックに成功しました</string>
+    <string name="log_info_start_ahead_load">先行取得を開始します</string>
+    <string name="log_info_success_ahead_load">先行取得に成功しました</string>
+    <string name="log_info_radio_wave_intensity">電波強度: </string>
+    <string name="log_info_all_clear_schedule">スケジュールをクリアしました</string>
+
+    <!--NetApiService -->
+    <string name="log_info_start_go_for_it">サーバURLの取得処理を開始します</string>
+    <string name="log_info_success_go_for_it">サーバURLの取得処理が成功しました</string>
+    <string name="log_error_failed_go_for_it">サーバURLの取得処理に失敗しました</string>
+
+    <!--ReportService -->
+    <string name="log_info_start_upload_locallog">内部ログのアップロードを開始します</string>
+    <string name="log_info_finish_upload_locallog">内部ログのアップロードを完了しました</string>
+    <string name="log_info_start_upload_touchlog">タッチログのアップロードを開始します</string>
+    <string name="log_info_finish_upload_touchlog">タッチログのアップロードを完了しました</string>
+    <string name="log_info_start_upload_playlog">再生ログのアップロードを開始します</string>
+    <string name="log_info_finish_upload_playlog">再生ログのアップロードを完了しました</string>
+    <string name="log_info_nodata_playlog">アップロード対象の再生ログが存在しません</string>
+    <string name="log_error_failed_upload_locallog">内部ログのアップロードに失敗しました</string>
+    <string name="log_error_failed_upload_touchlog">タッチログのアップロードに失敗しました</string>
+    <string name="log_error_failed_upload_playlog">再生ログのアップロードに失敗しました</string>
+
+    <!--RealtimeCheckService -->
+    <string name="log_info_detect_realtime_check">割込を検知しました．ヘルスチェックを行います</string>
+    <string name="log_error_net_util">サーバーとの通信に失敗しました</string>
+
+    <!-- UpdaterService -->
+    <string name="log_info_start_reboot">端末再起動を行います</string>
+    <string name="log_info_start_reboot_manual">手動による端末再起動を行います</string>
+    <string name="log_info_set_reboot_alarm_time">端末再起動を設定しました</string>
+    <string name="log_info_send_set_timestamp">Updaterに時刻合わせを予約しました</string>
+    <string name="log_info_cancel_reboot_alarm_time">端末再起動時刻をクリアしました</string>
+
+    <!-- Logging -->
+    <string name="log_error_http_failed_no_http_response">ホストが応答しません</string>
+    <string name="log_error_http_failed_socket_timeout">ホストからの応答がタイムアウトしました</string>
+    <string name="log_error_http_failed_connect_timeout">ホストへの接続がタイムアウトしました</string>
+    <string name="log_error_http_failed_ssl_handshake">SSL証明書エラーが発生しました</string>
+    <string name="log_error_http_failed_unknown_host">ホストの名前解決に失敗しました。 端末の通信設定が有効か確認してください</string>
+    <string name="log_error_http_failed_ssl">SSL通信に失敗しました。 端末の時刻設定が正しいか確認してください</string>
+    <string name="log_error_http_failed_exception">通信エラーが発生しました</string>
+
+
+
+    <string name="log_info_menu_auto_boot_on">メニュー操作により自動起動をオンにしました</string>
+    <string name="log_info_menu_auto_boot_off">メニュー操作により自動起動をオフにしました</string>
+    <string name="log_info_menu_net_service_on">メニュー操作によりネットサービスをオンにしました</string>
+    <string name="log_info_menu_net_service_off">メニュー操作によりネットサービスをオフにしました</string>
+    <string name="log_info_menu_use_external_storage_on">メニュー操作により拡張ストレージの使用チェックをオンにしました</string>
+    <string name="log_info_menu_use_external_storage_off">メニュー操作により拡張ストレージの使用チェックをオフにしました</string>
+    <string name="log_info_menu_data_delete_unused_contents">メニュー操作により不使用コンテンツ削除を実行しました</string>
+    <string name="log_info_menu_data_clear_schedule">メニュー操作により再生スケジュールクリアを実行しました</string>
+    <string name="log_info_menu_data_initialize">メニュー操作によりデータ初期化を実行しました</string>
+
+
+    <!-- Rescue Content-->
+    <string name = "log_info_detected_rescue_content">緊急情報を検知しました(全画面)</string>
+    <string name = "log_info_detected_rescue_telop">緊急情報を検知しました(テロップ)</string>
+    <string name = "log_info_rescue_content_id">( 緊急コンテンツID = %1$s )</string>
+    <string name = "log_info_start_rescue_content_download">緊急コンテンツのダウンロードを開始します</string>
+    <string name = "log_info_success_rescue_content_download">緊急コンテンツのダウンロードに成功しました</string>
+    <string name = "log_info_failed_rescue_content_download">緊急コンテンツのダウンロードに失敗しました</string>
+    <string name = "log_info_playback_rescue_contents">緊急情報の再生を開始します</string>
+
+
+
+    <!--_____________主にLogActivityで表示する用語_____________-->
+    <string name="log_text_label_title">LOG</string>
+    <string name="log_button_label_refresh">Refresh View</string>
+    <string name="log_text_label_checkbox">Only Latest</string>
+
+    <!--<string name="log_label_next_health_check_time">Next health check time:</string>-->
+    <!--<string name="log_label_next_ahead_load_time">Next ahead load time:</string>-->
+    <!--<string name="log_label_health_check_interval">Health check interval:</string>-->
+    <!--<string name="log_label_ahead_load_date">Ahead load date :</string>-->
+    <!--<string name="log_label_ahead_load_time">Ahead load time :</string>-->
+
+
+    <!--_____________Errorが発生したときに表示する文字列_____________-->
+    <!--<string name="log_error_viewer_return">Viewerでエラーが発生しました．Viewerを再起動します</string>-->
+    <!--<string name="log_error_viewer_finish_timeout">Viewerがwait時間内に終了できませんでした</string>-->
+    <!--<string name="log_error_viewer_start_timeout">Viewerがwait時間内に開始できませんでした</string>-->
+
+    <string name="log_error_failed_health_check">ヘルスチェックに失敗しました</string>
+    <!--<string name="log_error_viewer_create_blank_view">Viewerでエラーが発生しました．時刻を表示します</string>-->
+    <!--<string name="log_error_failed_get_application_info">アプリケーション情報取得処理に失敗しました</string>-->
+    <!--<string name="log_error_failed_ahead_load">先行取得に失敗しました</string>-->
+
+
+
+    <!--_____________noticeログ一覧_____________-->
+    <!-- 末尾にコンテンツIDおよびサブID -->
+    <!--<string name="log_notice_start_play_content">コンテンツを再生します</string>-->
+    <!--<string name="log_notice_start_extending_content">zipファイルの解凍を開始します</string>-->
+
+    <!--<string name="log_notice_start_access_server">サーバとの通信を開始します</string>-->
+    <!--<string name="log_notice_success_access_server">サーバとの通信が成功しました</string>-->
+    <!--<string name="log_notice_start_interrupt_check">割込チェックを行います</string>-->
+    <!--<string name="log_notice_success_interrupt_check">割込チェックに成功しました</string>-->
+
+    <!--<string name="log_notice_already_upload_playlog">対象の再生ログはアップロード済です</string>-->
+
+    <!--<string name="log_notice_viewer_finish_time">Viewer終了に要した時間(ms)：</string>-->
+    <!--<string name="log_notice_viewer_start_time">Viewer起動に要した時間(ms)：</string>-->
+    <!--<string name="log_notice_viewer_skip_finish">Viewer未起動のため終了処理をスキップしました</string>-->
+
+    <!--バックアップログファイル関連-->
+    <!--<string name = "log_failed_delete_backup_file">%1$s を削除できませんでした</string>-->
+</resources>

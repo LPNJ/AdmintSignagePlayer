@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.DeleteUnusedContentsDialogPreference
+        android:title="@string/setting_list_title_delete_unused_contents"
+        android:key="@string/setting_key_delete_unused_contents"
+        android:summary="@string/setting_list_summary_delete_unused_contents"/>
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.ClearScheduleDialogPreference
+        android:title="@string/setting_list_title_clear_schedule"
+        android:key="@string/setting_key_clear_schedule"
+        android:summary="@string/setting_list_summary_clear_schedule"/>
+    <jp.co.digitalcruise.admint.player.activity.main.dialog.CleanAllDialogPreference
+        android:title="@string/setting_list_title_clean_all"
+        android:key="@string/setting_key_clean_all"
+        android:summary="@string/setting_list_summary_clean_all"/>
+</PreferenceScreen>

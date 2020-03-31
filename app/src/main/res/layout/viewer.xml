@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:scaleType="fitCenter"
+    android:background="#000000">
+    <FrameLayout
+        android:id="@+id/viewer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:scaleType="fitCenter"
+        android:background="#000000" >
+
+        <FrameLayout
+            android:id="@+id/telop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:keepScreenOn="true"
+            android:scaleType="fitCenter">
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/login_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+
+        <Button
+            android:id="@+id/login_btn_exec"
+            android:layout_width="182dp"
+            android:layout_height="63dp"
+            android:background="@drawable/selector_print_button"
+            android:gravity="center"
+            android:text="@string/print_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="24.0px"
+            tools:layout_editor_absoluteX= "148dp"
+            tools:layout_editor_absoluteY="185dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="1100dp"
+        android:layout_height="460dp"
+        android:background="@drawable/clear_button_bg"
+        android:gravity="center"
+        android:text="透明なボタン" />
+
+
+</FrameLayout>

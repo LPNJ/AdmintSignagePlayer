@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_use_extra_storage">false</bool>
+    <bool name="default_wifi_reset">false</bool>
+    <bool name="default_check_anr_reboot">true</bool>
+    <bool name="default_net_service">true</bool>
+    <bool name="default_boot_start">true</bool>
+    <bool name="default_fast_video_change">false</bool>
+    <bool name="default_reset_network">true</bool>
+
+    <bool name="default_proxy_enable">false</bool>
+    <bool name="default_proxy_webcontent">false</bool>
+
+    <bool name="default_notice_log">false</bool>
+
+    <bool name="default_limitless_content_mode">false</bool>
+    <bool name="default_debug_mode">false</bool>
+
+    <bool name="default_stand_alone_mode">false</bool>
+</resources>
